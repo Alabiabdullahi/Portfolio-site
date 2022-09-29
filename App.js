@@ -1,7 +1,7 @@
 const express= require('express')
 
 const app= express()
-const port=process.env.PORT || 3000
+const port=process.env.PORT || 2000
 
 app.set('view engine','ejs')
 app.use(express.static('./Public'))
@@ -31,7 +31,7 @@ app.get('/selected',(req, res)=>{
 })
 
 
-app.use('/hire',(req, res)=>{
+app.get('/hire',(req, res)=>{
     res.redirect('/Contact')
 })
 app.listen(port,()=>{
