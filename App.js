@@ -7,27 +7,27 @@ app.set('view engine','ejs')
 app.use(express.static('./Public'))
 
 app.get('/',(req, res)=>{
-    res.status(200).render('Homepage',{title:'HomePage'})
+    res.render('Homepage',{title:'HomePage'})
 })
 
 app.get('/project',(req, res)=>{
-    res.status(200).render('Project',{title:'Projects'})
+    res.render('Project',{title:'Projects'})
 })
 
 
 
 app.get('/contact',(req, res)=>{
-    res.status(200).render('Contact',{title:'Contact'})
+    res.render('Contact',{title:'Contact'})
 })
 
 
 app.get('/About',(req, res)=>{
-    res.status(200).render('About',{title:'About Me'})
+    res.render('About',{title:'About Me'})
 })
 
 
 app.get('/selected',(req, res)=>{
-    res.status(200).render('selected',{title:'About Me'})
+    res.render('selected',{title:'About Me'})
 })
 
 
